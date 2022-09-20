@@ -1,9 +1,5 @@
-/**
- * This file is just a silly example to show everything working in the browser.
- * When you're ready to start on your site, clear the file. Happy hacking!
- **/
+import { registerImage } from "./lazy";
 
-console.log('Happy hacking :)')
 // const minimum = 1;
 // const maximum = 275725;
 
@@ -27,6 +23,7 @@ const createImageNode = (src) => {
 
 const addImageNode = () => {
     const newImg = createImageNode('https://images.unsplash.com/photo-1662639822728-47e894257077?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjU2ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM2ODI1OTk&ixlib=rb-1.2.1&q=80&w=400');
+    registerImage(newImg);
     app.append(newImg);
 }
 
